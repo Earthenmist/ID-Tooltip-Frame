@@ -1,3 +1,8 @@
+## v1.0.1
+
+- Corrected typo in TOC
+
+
 ## v1.0.0
 
 - Initial release
