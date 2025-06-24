@@ -1,3 +1,8 @@
+## v1.0.2
+
+- commented out debug lines
+
+
 ## v1.0.1
 
 - Corrected typo in TOC
