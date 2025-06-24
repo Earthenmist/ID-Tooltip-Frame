@@ -2,7 +2,7 @@
 
 **IDTooltipFrame** is a lightweight World of Warcraft addon that displays the Item or Spell ID of whatever you're hovering over in a compact, movable frame on your screen.
 
-🔍 Features
+### 🔍 Features
 
 - 🧾 Shows **Item IDs** and **Spell IDs** when you hover over items/spells
 - 🎨 Item ID text is colored based on **item quality** (grey, white, green, blue, etc.)
@@ -14,11 +14,11 @@
   - `/idtooltip hide` – hide it again
   - `/idtooltip reset` – reset to default position
 
-📌 Use Case
+### 📌 Use Case
 
 Perfect for addon developers, macro creators, or players who need to quickly identify item/spell IDs without extra UI clutter.
 
-💬 Feedback
+### 💬 Feedback
 
 Suggestions and feedback are welcome! Reach out via the comments tab on CurseForge.
 
