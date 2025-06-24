@@ -56,10 +56,12 @@ eventFrame:SetScript("OnEvent", function()
     local db = IDTooltipFrameDB
     if db and type(db.x) == "number" and type(db.y) == "number" then
         frame:SetPoint("TOPLEFT", UIParent, "BOTTOMLEFT", db.x, db.y)
-        print("Restored position:", db.x, db.y)
+   -- Uncomment the below for debug         
+   --     print("Restored position:", db.x, db.y)
     else
         frame:SetPoint("CENTER", UIParent, "CENTER", defaultX, defaultY)
-        print("Using default position.")
+   -- Uncomment the below for debug             
+   --    print("Using default position.")
     end
 
     TooltipDataProcessor.AddTooltipPostCall(Enum.TooltipDataType.Item, function(_, data)
