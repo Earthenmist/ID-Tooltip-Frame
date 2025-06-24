@@ -1,4 +1,4 @@
-## Interface: 110107
+## Interface: 110200
 ## Title: ID Tooltip Frame
 ## Notes: Shows the ID of hovered items or spells in a frame.
 ## Author: Earthenmist-Anachronos
@@ -9,15 +9,3 @@
 
 
 IDTooltipFrame.lua
-
-
-## Interface: 110107
-## Title: Mythic Dungeon Teleports
-## Notes: Adds teleport buttons for M+ Dungeons & Raids
-## Notes-ruRU: Добавляет кнопки телепортации для M+ подземелий и рейдов
-## Author: Earthenmist-Anachronos
-## Version: 1.16.3
-## X-Wago-ID: BNBeblGx
-## IconTexture: Interface\AddOns\DungeonTeleports\Images\DungeonTeleportsLogo.tga
-## DefaultState: Enabled
-## SavedVariables: DungeonTeleportsDB
