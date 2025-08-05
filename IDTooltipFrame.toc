@@ -1,11 +1,12 @@
-## Interface: 110107
+## Interface: 110107, 110200
 ## Title: ID Tooltip Frame
 ## Notes: Shows the ID of hovered items or spells in a frame.
-## Author: Earthenmist-Anachronos
-## Version: 1.0.2
+## Author: Lanni-Alonsus
+## Version: 1.0.3
 ## IconTexture: Interface\AddOns\IDTooltipFrame\Images\IDToolTipsFramLogo.tga
 ## DefaultState: Enabled
 ## SavedVariables: IDTooltipFrameDB
 
 
 IDTooltipFrame.lua
+
