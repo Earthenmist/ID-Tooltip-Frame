@@ -3,10 +3,12 @@
 ## Notes: Shows the ID of hovered items or spells in a frame.
 ## Author: Lanni-Alonsus
 ## Version: 1.0.3
+## X-Wago-ID: rN4VndKD
 ## IconTexture: Interface\AddOns\IDTooltipFrame\Images\IDToolTipsFramLogo.tga
 ## DefaultState: Enabled
 ## SavedVariables: IDTooltipFrameDB
 
 
 IDTooltipFrame.lua
+
 
