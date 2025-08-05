@@ -1,3 +1,7 @@
+## v1.0.3
+
+- updated for 11.2
+
 ## v1.0.2
 
 - commented out debug lines
