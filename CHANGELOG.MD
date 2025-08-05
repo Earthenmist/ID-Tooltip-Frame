@@ -1,5 +1,9 @@
 ## v1.0.3
 
+- published to wago.io
+
+## v1.0.3
+
 - updated for 11.2
 
 ## v1.0.2
