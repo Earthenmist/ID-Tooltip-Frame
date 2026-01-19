@@ -1,5 +1,15 @@
 ## Changelog
 
+## v1.6.3
+
+Midnight compatibility hardening.
+
+Fix potential Lua error when formatting item quality colors (convert RGB floats to integers before %02x).
+
+Add defensive tooltip hook fallback if TooltipDataProcessor or Enum.TooltipDataType is unavailable.
+
+No functional or visual behavior changes.
+
 ## v1.6.2
 
 - Remove alpha-hiding during scale settle (could leave frame invisible in edge cases).
