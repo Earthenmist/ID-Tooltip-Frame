@@ -6,7 +6,10 @@
 ## X-Wago-ID: rN4VndKD
 ## IconTexture: Interface\AddOns\IDTooltipFrame\Images\IDToolTipsFramLogo.tga
 ## DefaultState: Enabled
+
+## Category: Development Tools
 ## SavedVariables: IDTooltipFrameDB
 
 
 IDTooltipFrame.lua
+
