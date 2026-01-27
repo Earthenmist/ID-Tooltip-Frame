@@ -479,7 +479,10 @@ eventFrame:SetScript("OnEvent", function(_, event, arg1)
             end)
 
             GameTooltip:HookScript("OnTooltipCleared", function()
-                if frame and frame.isLocked then frame.text:SetText("") end
+                if frame and frame.isLocked then
+                    frame.text:SetText("")
+                    frame:Hide()
+                end
             end)
 
             -- Slash commands
