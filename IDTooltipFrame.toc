@@ -1,8 +1,8 @@
-## Interface: 110207, 120000, 120001
+## Interface: 120000, 120001
 ## Title: ID Tooltip Frame
 ## Notes: Shows Item/Spell IDs in a movable tooltip-like frame.
 ## Author: Lanni-Alonsus
-## Version: 1.6.2
+## Version: 1.6.3
 ## X-Wago-ID: rN4VndKD
 ## IconTexture: Interface\AddOns\IDTooltipFrame\Images\IDToolTipsFramLogo.tga
 ## DefaultState: Enabled
@@ -12,4 +12,5 @@
 
 
 IDTooltipFrame.lua
+
 
