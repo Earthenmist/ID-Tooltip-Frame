@@ -1,5 +1,9 @@
 ## Changelog
 
+## v1.6.4
+
+Fix for empty frame appearing randomly
+
 ## v1.6.3
 
 Midnight compatibility hardening.
