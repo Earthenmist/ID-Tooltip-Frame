@@ -1,6 +1,6 @@
 ## Changelog
 
-## v1.6.4
+## v1.6.4  
 
 Fix for empty frame appearing randomly
 
