@@ -1,4 +1,4 @@
-## IDTooltipFrame
+## IDTooltipFrame 
 
 **IDTooltipFrame** is a lightweight World of Warcraft addon that displays the Item or Spell ID of whatever you're hovering over in a compact, movable frame on your screen.
 
