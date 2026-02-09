@@ -26,25 +26,20 @@
 4. Relaunch the game.
 
 ## ⚙️ Configuration
-- Slash commands:
-  - `/idtooltip show`
-  - `/idtooltip hide`
-  - `/idtooltip reset`
+Use the following slash commands:
+- `/idtooltip show`
+- `/idtooltip hide`
+- `/idtooltip reset`
 
 ## 🧩 Compatibility
 - **Game:** Retail
 - **Dependencies:** None
 
-## 🐛 Bug Reports & Feature Requests
-Please include:
-- What you were doing / expected / what happened
-- Steps to reproduce
-- Your addon version
-- Any Lua error text (full stack)
-- Screenshots if UI-related
+## 💬 Support & Community
+For bug reports, feature requests, release notes, and beta builds, join the official Discord:
 
-**Discord:** https://discord.gg/U8mKfHpeeP  
-Channels: `#bug-reports` and `#lua-errors`
+**LanniOfAlonsus • Addon Hub**  
+https://discord.gg/U8mKfHpeeP
 
 ## 📜 License
 All Rights Reserved.
