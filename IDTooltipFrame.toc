@@ -2,7 +2,7 @@
 ## Title: ID Tooltip Frame
 ## Notes: Shows Item/Spell IDs in a movable tooltip-like frame.
 ## Author: Lanni-Alonsus
-## Version: 1.6.4
+## Version: 1.6.5
 ## X-Curse-Project-ID: 1293270
 ## X-Wago-ID: rN4VndKD
 ## IconTexture: Interface\AddOns\IDTooltipFrame\Images\IDToolTipsFramLogo.tga
@@ -13,6 +13,7 @@
 
 
 IDTooltipFrame.lua
+
 
 
 
