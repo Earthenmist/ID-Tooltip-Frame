@@ -18,33 +18,16 @@ jobs:
           set -euo pipefail
 
           if [[ "${{ github.event_name }}" == "push" ]]; then
-            cat > message.txt << EOF
-🧩 **${{ github.repository }}**
-New commit pushed to **${{ github.ref_name }}** by **${{ github.actor }}**
-<${{ github.event.head_commit.url }}>
-EOF
+            printf '%s\n'               "🧩 **${{ github.repository }}**"               "New commit pushed to **${{ github.ref_name }}** by **${{ github.actor }}**"               "<${{ github.event.head_commit.url }}>"               > message.txt
 
           elif [[ "${{ github.event_name }}" == "pull_request" ]]; then
-            cat > message.txt << EOF
-🔀 **${{ github.repository }}**
-PR **#${{ github.event.pull_request.number }}**: ${{ github.event.pull_request.title }}
-State: **${{ github.event.action }}** by **${{ github.actor }}**
-<${{ github.event.pull_request.html_url }}>
-EOF
+            printf '%s\n'               "🔀 **${{ github.repository }}**"               "PR **#${{ github.event.pull_request.number }}**: ${{ github.event.pull_request.title }}"               "State: **${{ github.event.action }}** by **${{ github.actor }}**"               "<${{ github.event.pull_request.html_url }}>"               > message.txt
 
           elif [[ "${{ github.event_name }}" == "issues" ]]; then
-            cat > message.txt << EOF
-🐛 **${{ github.repository }}**
-Issue **#${{ github.event.issue.number }}**: ${{ github.event.issue.title }}
-State: **${{ github.event.action }}** by **${{ github.actor }}**
-<${{ github.event.issue.html_url }}>
-EOF
+            printf '%s\n'               "🐛 **${{ github.repository }}**"               "Issue **#${{ github.event.issue.number }}**: ${{ github.event.issue.title }}"               "State: **${{ github.event.action }}** by **${{ github.actor }}**"               "<${{ github.event.issue.html_url }}>"               > message.txt
 
           else
-            cat > message.txt << EOF
-📣 **${{ github.repository }}**
-Event: ${{ github.event_name }} by **${{ github.actor }}**
-EOF
+            printf '%s\n'               "📣 **${{ github.repository }}**"               "Event: ${{ github.event_name }} by **${{ github.actor }}**"               > message.txt
           fi
 
       - name: Send to Discord (no embeds)
