@@ -1,4 +1,4 @@
-## :jigsaw: Addon Updates (2026-02-09)
+## 🧩 Addon Updates (2026-02-09)
 
 **IDTooltipFrame** — v1.6.5  
 
