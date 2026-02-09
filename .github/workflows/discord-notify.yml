@@ -13,22 +13,39 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Build message
-        id: build
         shell: bash
         run: |
           set -euo pipefail
 
           if [[ "${{ github.event_name }}" == "push" ]]; then
-            MSG="🧩 **${{ github.repository }}**\nNew commit pushed to **${{ github.ref_name }}** by **${{ github.actor }}**\n<${{ github.event.head_commit.url }}>"
-          elif [[ "${{ github.event_name }}" == "pull_request" ]]; then
-            MSG="🔀 **${{ github.repository }}**\nPR **#${{ github.event.pull_request.number }}**: ${{ github.event.pull_request.title }}\nState: **${{ github.event.action }}** by **${{ github.actor }}**\n<${{ github.event.pull_request.html_url }}>"
-          elif [[ "${{ github.event_name }}" == "issues" ]]; then
-            MSG="🐛 **${{ github.repository }}**\nIssue **#${{ github.event.issue.number }}**: ${{ github.event.issue.title }}\nState: **${{ github.event.action }}** by **${{ github.actor }}**\n<${{ github.event.issue.html_url }}>"
-          else
-            MSG="📣 **${{ github.repository }}**\nEvent: ${{ github.event_name }} by **${{ github.actor }}**"
-          fi
+            cat > message.txt << EOF
+🧩 **${{ github.repository }}**
+New commit pushed to **${{ github.ref_name }}** by **${{ github.actor }}**
+<${{ github.event.head_commit.url }}>
+EOF
 
-          echo "$MSG" > message.txt
+          elif [[ "${{ github.event_name }}" == "pull_request" ]]; then
+            cat > message.txt << EOF
+🔀 **${{ github.repository }}**
+PR **#${{ github.event.pull_request.number }}**: ${{ github.event.pull_request.title }}
+State: **${{ github.event.action }}** by **${{ github.actor }}**
+<${{ github.event.pull_request.html_url }}>
+EOF
+
+          elif [[ "${{ github.event_name }}" == "issues" ]]; then
+            cat > message.txt << EOF
+🐛 **${{ github.repository }}**
+Issue **#${{ github.event.issue.number }}**: ${{ github.event.issue.title }}
+State: **${{ github.event.action }}** by **${{ github.actor }}**
+<${{ github.event.issue.html_url }}>
+EOF
+
+          else
+            cat > message.txt << EOF
+📣 **${{ github.repository }}**
+Event: ${{ github.event_name }} by **${{ github.actor }}**
+EOF
+          fi
 
       - name: Send to Discord (no embeds)
         shell: bash
