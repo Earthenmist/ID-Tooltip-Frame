@@ -1,9 +1,9 @@
-## 🧩 Addon Updates (2026-06-16)
+## 🧩 Addon Updates (2026-07-29)
 
-**IDTooltipFrame** — v1.6.7  
+**IDTooltipFrame** — v1.6.8  
 
 **Changes:**  
-• Updated toc for WoW 12.0.7 patch release.  
+• Updated toc for WoW 12.1 patch release.  
 
 **Fixes:**  
 • None.
